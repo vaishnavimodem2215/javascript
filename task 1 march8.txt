@@ -1,0 +1,61 @@
+
+task -1 .. 08/03/21
+
+1.Difference between HTTP1. 1 vs HTTP2..
+
+HTTP was created by Tim Berners-Lee to allow communication between a server and a client. It is this communication that forms the basis of the Internet.
+             
+         
+  HTTP1.1                                                                              
+
+Version 1.1 was released in 1997 and became the Internet Standard.This version added many performance enhancements, such as keepalive connections, 
+caching mechanisms, request pipelining, transfer encodings, and byte range requests.This new version was better and removed many of the ambiguities found in HTTP/1.0.
+
+
+  HTTP2 
+
+Released in February 2015 by the Internet Engineering Task Force (IETF) focussed on improving the performance of HTTP.
+ This article focuses on the major changes of this version in more detail.
+
+The key differences HTTP/2 has to HTTP/1.x are as follows:
+
+It is binary, instead of textual
+It is fully multiplexed, instead of ordered and blocking
+It can use one connection for parallelism
+It uses header compression to reduce overhead
+It allows Server Pushing to add responses proactively into the Browser cache.
+
+2. HTTP version history...
+
+Invention of the World Wide Web
+HTTP/0.9 – The one-line protocol
+HTTP/1.0 – Building extensibility
+HTTP/1.1 – The standardized protocol
+More than 15 years of extensions
+HTTP/2 – A protocol for greater performance
+Post-HTTP/2 evolution
+HTTP/3 - HTTP over QUIC.
+
+
+3.List 5 difference between Browser js console vs Node js....
+
+In the browser, most of the time what you are doing is interacting with the DOM, or other Web Platform APIs like Cookies. 
+Those do not exist in Node.js, of course. You don't have the document, window and all the other objects that are provided by the browser.
+
+And in the browser, we don't have all the nice APIs that Node.js provides through its modules, like the filesystem access functionality.
+
+Another big difference is that in Node.js you control the environment. 
+Unless you are building an open source application that anyone can deploy anywhere, you know which version of Node.js you will run the application on. 
+Compared to the browser environment, where you don't get the luxury to choose what browser your visitors will use, this is very convenient.
+Since JavaScript moves so fast, but browsers can be a bit slow to upgrade, sometimes on the web you are stuck with using older JavaScript / ECMAScript releases.
+Another difference is that Node.js uses the CommonJS module system, while in the browser we are starting to see the ES Modules standard being implemented.
+
+4.what happens when you type a URL in the address bar in the browser..
+
+You enter a URL into a web browser
+The browser looks up the IP address for the domain name via DNS
+The browser sends a HTTP request to the server
+The server sends back a HTTP response
+The browser begins rendering the HTML
+The browser sends requests for additional objects embedded in HTML (images, css, JavaScript) and repeats steps 3-5.
+Once the page is loaded, the browser sends further async requests as needed
